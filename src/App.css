@@ -1,0 +1,45 @@
+/* .app_logo {
+  height : 80px;
+  width: 80px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 4px;
+}
+
+.menubar {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu_items {
+  display: flex;
+  padding: 10px;
+  margin: 8px;
+  align-items: center;
+}
+
+.rest-img {
+  height: 160px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.rest-card {
+  margin: 4px;
+  padding: 4px;
+  border: 1px solid goldenrod;
+  border-radius: 4px;
+  height: 350px;
+  width: 200px;
+}
+
+.rest-cards {
+  display: flex;
+  flex-wrap: wrap;
+} */
