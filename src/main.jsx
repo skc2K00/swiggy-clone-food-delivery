@@ -9,6 +9,7 @@ const Help = lazy(() => import('./Components/Help.jsx'));
 const Cart = lazy(() => import('./Components/Cart.jsx'));
 const Signin = lazy(() => import('./Components/Signin.jsx'));
 const Offers = lazy(() => import('./Components/Offers.jsx'));
+const LogIn = lazy(() => import('./Components/LogIn.jsx'));
 import Body from './Components/Body.jsx';
 import MenuCard from './Components/MenuCard.jsx';
 
@@ -39,12 +40,16 @@ const router = createBrowserRouter([
         element : <Suspense fallback={<p>Loading Cart</p>}><Cart /></Suspense>
       },
       {
-        path : "/signin",
-        element : <Suspense fallback={<p>Loading Signin</p>}><Signin /></Suspense>
+        path : "/signup",
+        element : <Suspense fallback={<p> SignUp</p>}><Signin /></Suspense>
       },
       {
         path : "/menucard/:id",
         element : <MenuCard />
+      },
+      {
+        path : "/login",
+        element : <Suspense fallback={<p>LogIn</p>}><LogIn /></Suspense>
       }
     ]
   }

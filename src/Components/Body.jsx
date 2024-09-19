@@ -30,7 +30,7 @@ let Body = () => {
 
     const filterRestaurantsOnRating = () => {
         const filteredRest = resCopy.filter((restaurant) => {
-            return (restaurant.info.avgRating) >= 4.2;
+            return (restaurant.info.avgRating) >= 4.3;
         })
         setResData(filteredRest);
     }
@@ -53,7 +53,7 @@ let Body = () => {
 
     return( 
       <>
-        <button className="bg-blue-400 hover:bg-blue-700 text-white font-bold py-1 px-2 m-1 rounded" 
+        <button className="bg-blue-400 hover:bg-blue-700 text-white font-bold py-1 px-2 m-1 rounded ml-24" 
             onClick={filterRestaurantsOnRating}
         >
             Top Rated Restaurants

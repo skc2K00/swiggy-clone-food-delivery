@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 import { foodDeliveryAppImage } from "../utils/constants";
 import { useContext } from "react";
 import Context from "../utils/Context";
+import { useState } from "react";
 
 
 import { useDispatch, useSelector } from "react-redux";
 
-let Head = () => {
+const Head = () => {
+
+  const [btnName,setBtnName] = useState("Log In");
 
   const cart = useSelector((state) => state.cart)
 
@@ -26,9 +29,10 @@ let Head = () => {
             </div>
           </Link>
           <Link to="/offers"><li className='p-2'>Offers</li></Link>
-          <Link to="/help"><li className='p-2'>Help</li></Link>
-          <Link to="/signin"><li className='p-2'>Sign In</li></Link>
+          <Link to="/help"><li className='p-2 '>Help</li></Link>
+          {/* <Link to="/signin"><li className='p-2'>Sign In</li></Link> */}
           <Link to="/cart"><li className='p-2'><span className="p-1">{cart.length}</span>Cart</li></Link>
+          <Link to="/login"><li onClick={()=> {btnName === "Log In" ? setBtnName("Log Out") : setBtnName("Log In")}} className='p-2'>Login</li></Link>
         </ul>
             </div>
           </div>

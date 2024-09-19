@@ -27,7 +27,7 @@ const RestMenu = (props) => {
         <div className='m-auto p-2 shadow-lg w-[50vw]'>
             <div className='flex justify-between' onClick={toggleShowMenu} >
             <span className='font-extrabold m-4'>{item.card.card.title} ({item.card.card.itemCards.length})</span>
-            {!showItem ? <span><SlArrowDown /></span> : <SlArrowUp />}
+            {!showItem ? <span><SlArrowDown /></span> : <span><SlArrowUp /></span>}
             </div>
             {showItem && <MenuItems cards={item.card.card.itemCards}/>}
         </div>
