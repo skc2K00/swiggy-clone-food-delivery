@@ -6,7 +6,7 @@ import { useContext } from "react";
 let RestaurantCard = (props) => {
 
   // const myName = useContext(Context)
-
+  
     const {name,avgRating,cloudinaryImageId,cuisines,sla,locality} = props.item.info
     return(
       <div className='h-[350px] w-[200px] m-1 p-1 rounded bg-slate-100 items-center'>
@@ -15,7 +15,7 @@ let RestaurantCard = (props) => {
             <h4 className="font-semibold">{name}</h4>
             <p>{avgRating} Rating</p>
             <p>{cuisines[0]}</p>
-            <p>{sla.deiveryTime}</p>
+            <p>{sla.slaString}</p>
             <p>{locality}</p>
             {/* <p>{myName}</p> */}
         </div>
